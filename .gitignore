@@ -1,15 +1,21 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+# ────────────────────────────────
+# General dependencies / build
+# ────────────────────────────────
 node_modules/
-
-# Expo
-.expo/
 dist/
+build/
 web-build/
-expo-env.d.ts
+.expo/
+.expo-shared/
+.env
+.env*.local
+*.tsbuildinfo
 
-# Native
+# ────────────────────────────────
+# Native / platform files
+# ────────────────────────────────
+/ios
+/android
 .kotlin/
 *.orig.*
 *.jks
@@ -17,27 +23,27 @@ expo-env.d.ts
 *.p12
 *.key
 *.mobileprovision
-
-# Metro
 .metro-health-check*
 
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
-# macOS
+# ────────────────────────────────
+# IDE / editor files
+# ────────────────────────────────
+.idea/
+.vscode/
 .DS_Store
+Thumbs.db
+
+# ────────────────────────────────
+# Logs
+# ────────────────────────────────
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ────────────────────────────────
+# Certificates / keys
+# ────────────────────────────────
 *.pem
 
-# local env files
-.env*.local
-
-# typescript
-*.tsbuildinfo
-
-app-example
-
-# generated native folders
-/ios
-/android
+# ────────────────────────────────
+# Example / temporary fo
